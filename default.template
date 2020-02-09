@@ -1,0 +1,39 @@
+<html>
+<head>
+<style>
+  body {
+    background: #ffffff;
+    text-align:center;
+  }
+  #info {
+    font-size: 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #page {
+    margin-top:   {{pageMarginTop}};
+    margin-left:  {{pageMarginLeft}};
+    margin-right: {{pageMarginRight}};
+  }
+  .row {
+    display: block;
+  }
+  .obj {
+    display: inline-block;
+    margin-top:    {{objMarginTop}};
+    margin-left:   {{objMarginLeft}};
+    margin-right:  {{objMarginRight}};
+    margin-bottom: {{objMarginBottom}};
+  }
+  img {
+    width:          {{objWidth}};
+    height:         {{objHeight}};
+  }
+</style>
+</head>
+<body>
+<div id="page">
+{{typesetTable}}
+</div>
+<br><span id="info">{{typesetTemplate}} | table: {{countColumns}}x{{countRows}} | page: {{pageMarginTop}}, {{pageMarginLeft}}, {{pageMarginRight}} | object: {{objMarginTop}}, {{objMarginLeft}}, {{objMarginRight}}, {{objMarginBottom}}</span>
+</body></html>
